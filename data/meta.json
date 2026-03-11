@@ -1,0 +1,51 @@
+{
+  "name": "drift_adaptation_dataset",
+  "description": "Synthetic dataset for drift detection and adaptation experiments",
+  "version": "1.0.0",
+  "features": [
+    {
+      "name": "feature_0",
+      "type": "continuous",
+      "range": [-5.0, 5.0],
+      "description": "Synthetic continuous feature"
+    },
+    {
+      "name": "feature_1", 
+      "type": "continuous",
+      "range": [-5.0, 5.0],
+      "description": "Synthetic continuous feature"
+    },
+    {
+      "name": "feature_2",
+      "type": "continuous", 
+      "range": [-5.0, 5.0],
+      "description": "Synthetic continuous feature"
+    },
+    {
+      "name": "feature_3",
+      "type": "continuous",
+      "range": [-5.0, 5.0], 
+      "description": "Synthetic continuous feature"
+    },
+    {
+      "name": "feature_4",
+      "type": "continuous",
+      "range": [-5.0, 5.0],
+      "description": "Synthetic continuous feature"
+    }
+  ],
+  "target": {
+    "name": "class",
+    "type": "categorical",
+    "classes": [0, 1],
+    "description": "Binary classification target"
+  },
+  "drift_types": ["concept", "covariate", "label"],
+  "sensitive_attributes": [],
+  "monotonic_features": [],
+  "n_samples": 1000,
+  "n_features": 5,
+  "n_classes": 2,
+  "test_size": 0.3,
+  "random_state": 42
+}
